@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 
 
+# обозначаем шаблон и вынимаем из querystring нужные аргументы
 class MessageView(TemplateView):
     template_name = 'index.html'
 

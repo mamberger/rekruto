@@ -20,8 +20,12 @@
  </head>
  <body>
   <div id="centerLayer">
+   {% if name and message %}
     <h3>Hello {{ name }}!</h3>
     <h4>{{ message }}</h4>
+   {% else %}
+   <h3>Аргументы не переданы :(</h3>
+   {% endif %}
   </div>
  </body>
 </html>
